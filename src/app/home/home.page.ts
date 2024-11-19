@@ -6,7 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  cantidadQ: number = 0;
+  resultadoD: number = 0;
 
   constructor() {}
+
+  calcularDolares (){
+    const tipoCambio = 8.00;
+    this.resultadoD = this.cantidadQ / tipoCambio;
+  }
 
 }

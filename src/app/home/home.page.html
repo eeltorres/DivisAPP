@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      DivisAPP 23002910
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -14,7 +14,14 @@
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <ion-item>
+      <ion-input [(ngModel)]="cantidadQ" label="Ingrese una cantidad Q." type="number" placeholder="000"></ion-input>
+    </ion-item>
+    <ion-button (click)="calcularDolares()">Calcular</ion-button>
+    <br>
+
+    <strong>El resultado en dolares es</strong>
+    <br>  
+    <strong>$ {{resultadoD.toFixed(2)}}</strong>
   </div>
 </ion-content>
